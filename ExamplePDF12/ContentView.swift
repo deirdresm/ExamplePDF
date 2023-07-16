@@ -1,29 +1,67 @@
 //
 //  ContentView.swift
-//  ExamplePDF
+//  ExamplePDF12
 //
-//  Created by Deirdre Saoirse Moen on 7/14/23.
+//  Created by Deirdre Saoirse Moen on 7/15/23.
 //
 
-import AppKit
 import SwiftUI
-import TPPDF
 
 struct ContentView: View {
-	// search and sort stuff (if one's on macOS 12 or later, sigh, useful with Table, also macOS 12 or later)
-//	@State var selection = Set<ReleaseInfo.ID>()
-//	@Binding var searchText: String
-//	@State var sortOrder: [KeyPathComparator<ReleaseInfo>] = [.init(\.releaseDate, order: SortOrder.forward)]
+	@State var selection = Set<ReleaseInfo.ID>()
+	@Binding var searchText: String
 
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .foregroundColor(.accentColor)
+	// note that even though we passed in the unsorted releases,
+	// passing this into Table ensures sorting.
+	@State var sortOrder: [KeyPathComparator<ReleaseInfo>] = [.init(\.releaseDate, order: SortOrder.forward)]
+
+	var releases: [ReleaseInfo] {
+		return ReleaseInfo.releases
+			.filter {
+				searchText.isEmpty ? true : $0.osName.localizedCaseInsensitiveContains(searchText)
+			}
+			.sorted(using: sortOrder)
+	}
+
+
+	var body: some View {
+		VStack {
+
+			Image(systemName: "globe")
+				.foregroundColor(.accentColor)
 				.font(.system(size: 48))
 				.padding(.bottom, 5)
-            Text("Big List of macOS Releases!")
+			Text("Big List of macOS Releases!")
 				.font(.largeTitle)
-			TableView()
+			Table(releases, selection: $selection, sortOrder: $sortOrder) {
+				TableColumn("Release Name") {
+					Text($0.osName)
+						.padding(3)
+						.layoutPriority(1)
+				}
+				.width(120) // you can get better column widths with alignment guides
+				TableColumn("Version") {
+					Text($0.osVersion)
+						.padding(3)
+				}
+				.width(60)
+				TableColumn("Chipsets") {
+					Text($0.chipsetsString)
+						.padding(3)
+				}
+				.width(180)
+				TableColumn("Release Date") {
+					Text($0.releaseDateString)
+						.padding(3)
+				}
+				.width(100)
+				TableColumn("Latest Release") {
+					Text($0.latestReleaseDateString)
+						.padding(3)
+				}
+				.width(100)
+			}
+			.searchable(text: $searchText, prompt: "Search releases")
 
 			Button(
 				action: {
@@ -34,15 +72,15 @@ struct ContentView: View {
 						.padding()
 				}
 			)
-        }
-        .padding()
-		.frame(minWidth: 300, idealWidth: 300, maxWidth: 400,
+		}
+		.padding()
+		.frame(minWidth: 400, idealWidth: 500, maxWidth: 600,
 			   minHeight: 400, idealHeight: 400, maxHeight: 500,
 			   alignment: .center)
 
 		// Window height: On macOS 11, if you want to constrain
 		// the window, easist to do it with NSWindow.
-    }
+	}
 
 	func buttonPressed() {
 		// You can simplify this in later versions of SwiftUI.
@@ -89,7 +127,7 @@ struct TableView: View {
 
 struct ContentView_Previews: PreviewProvider {
 	@State static var searchText: String = ""
-    static var previews: some View {
-		ContentView()
-    }
+	static var previews: some View {
+		ContentView(searchText: $searchText)
+	}
 }

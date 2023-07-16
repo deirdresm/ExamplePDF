@@ -42,6 +42,10 @@ extension ReleaseInfo {
 		return ReleaseInfo.dateFormatter.string(from: latestReleaseDate)
 	}
 
+	var chipsetsString: String {
+		return chipsets.joined(separator: ", ")
+	}
+
 	static var cheetah = ReleaseInfo(osName: "Cheetah",
 									 osVersion: "10",
 									 chipsets: ["PowerPC"],
@@ -145,7 +149,7 @@ extension ReleaseInfo {
 										  .tiger, .leopard, .snowLeopard, .mavericks, .lion, .mountainLion,
 										  .yosemite, .elCapitan, .sierra, .highSierra, .mojave, .catalina]
 
-	// Don't need this for macOS 12+ as you can use the SwiftUI stuff that's commented out. But! This is for macOS 11.
+	// Don't need this for macOS 12+'s view as you can use Table-based sorting. But! This is for macOS 11.
 	static var sortedReleases = releases.sorted()
 }
 

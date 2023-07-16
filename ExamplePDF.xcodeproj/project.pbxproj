@@ -13,6 +13,14 @@
 		38FAAE992A62216E00514DD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38FAAE982A62216E00514DD6 /* Preview Assets.xcassets */; };
 		38FAAEA12A6221B500514DD6 /* ReleaseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FAAEA02A6221B500514DD6 /* ReleaseInfo.swift */; };
 		38FAAEA42A62464500514DD6 /* TPPDF in Frameworks */ = {isa = PBXBuildFile; productRef = 38FAAEA32A62464500514DD6 /* TPPDF */; };
+		38FAAEAD2A63283300514DD6 /* ExamplePDF12App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FAAEAC2A63283300514DD6 /* ExamplePDF12App.swift */; };
+		38FAAEAF2A63283300514DD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FAAEAE2A63283300514DD6 /* ContentView.swift */; };
+		38FAAEB12A63283400514DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38FAAEB02A63283400514DD6 /* Assets.xcassets */; };
+		38FAAEB42A63283500514DD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38FAAEB32A63283500514DD6 /* Preview Assets.xcassets */; };
+		38FAAEB92A63285C00514DD6 /* ReleaseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FAAEA02A6221B500514DD6 /* ReleaseInfo.swift */; };
+		38FAAEBC2A632E4D00514DD6 /* PDFGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FAAEBB2A632E4D00514DD6 /* PDFGeneration.swift */; };
+		38FAAEBD2A63302400514DD6 /* PDFGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FAAEBB2A632E4D00514DD6 /* PDFGeneration.swift */; };
+		38FAAEC12A6348F300514DD6 /* TPPDF in Frameworks */ = {isa = PBXBuildFile; productRef = 38FAAEC02A6348F300514DD6 /* TPPDF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		38FAAE9A2A62216E00514DD6 /* ExamplePDF.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExamplePDF.entitlements; sourceTree = "<group>"; };
 		38FAAEA02A6221B500514DD6 /* ReleaseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseInfo.swift; sourceTree = "<group>"; };
 		38FAAEA52A62467700514DD6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		38FAAEAA2A63283300514DD6 /* ExamplePDF12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamplePDF12.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38FAAEAC2A63283300514DD6 /* ExamplePDF12App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePDF12App.swift; sourceTree = "<group>"; };
+		38FAAEAE2A63283300514DD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		38FAAEB02A63283400514DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38FAAEB32A63283500514DD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		38FAAEB52A63283500514DD6 /* ExamplePDF12.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExamplePDF12.entitlements; sourceTree = "<group>"; };
+		38FAAEBA2A63289600514DD6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		38FAAEBB2A632E4D00514DD6 /* PDFGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFGeneration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +51,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		38FAAEA72A63283300514DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FAAEC12A6348F300514DD6 /* TPPDF in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,8 +66,11 @@
 			isa = PBXGroup;
 			children = (
 				38FAAEA52A62467700514DD6 /* README.md */,
+				38FAAEBE2A63303200514DD6 /* Shared */,
 				38FAAE902A62216D00514DD6 /* ExamplePDF */,
+				38FAAEAB2A63283300514DD6 /* ExamplePDF12 */,
 				38FAAE8F2A62216D00514DD6 /* Products */,
+				38FAAEBF2A6348F300514DD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				38FAAE8E2A62216D00514DD6 /* ExamplePDF.app */,
+				38FAAEAA2A63283300514DD6 /* ExamplePDF12.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,7 +88,6 @@
 			children = (
 				38FAAE912A62216D00514DD6 /* ExamplePDFApp.swift */,
 				38FAAE932A62216D00514DD6 /* ContentView.swift */,
-				38FAAEA02A6221B500514DD6 /* ReleaseInfo.swift */,
 				38FAAE952A62216E00514DD6 /* Assets.xcassets */,
 				38FAAE9A2A62216E00514DD6 /* ExamplePDF.entitlements */,
 				38FAAE972A62216E00514DD6 /* Preview Content */,
@@ -74,6 +101,43 @@
 				38FAAE982A62216E00514DD6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		38FAAEAB2A63283300514DD6 /* ExamplePDF12 */ = {
+			isa = PBXGroup;
+			children = (
+				38FAAEBA2A63289600514DD6 /* README.md */,
+				38FAAEAC2A63283300514DD6 /* ExamplePDF12App.swift */,
+				38FAAEAE2A63283300514DD6 /* ContentView.swift */,
+				38FAAEB02A63283400514DD6 /* Assets.xcassets */,
+				38FAAEB52A63283500514DD6 /* ExamplePDF12.entitlements */,
+				38FAAEB22A63283400514DD6 /* Preview Content */,
+			);
+			path = ExamplePDF12;
+			sourceTree = "<group>";
+		};
+		38FAAEB22A63283400514DD6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				38FAAEB32A63283500514DD6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		38FAAEBE2A63303200514DD6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				38FAAEBB2A632E4D00514DD6 /* PDFGeneration.swift */,
+				38FAAEA02A6221B500514DD6 /* ReleaseInfo.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		38FAAEBF2A6348F300514DD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +163,26 @@
 			productReference = 38FAAE8E2A62216D00514DD6 /* ExamplePDF.app */;
 			productType = "com.apple.product-type.application";
 		};
+		38FAAEA92A63283300514DD6 /* ExamplePDF12 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38FAAEB82A63283500514DD6 /* Build configuration list for PBXNativeTarget "ExamplePDF12" */;
+			buildPhases = (
+				38FAAEA62A63283300514DD6 /* Sources */,
+				38FAAEA72A63283300514DD6 /* Frameworks */,
+				38FAAEA82A63283300514DD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExamplePDF12;
+			packageProductDependencies = (
+				38FAAEC02A6348F300514DD6 /* TPPDF */,
+			);
+			productName = ExamplePDF12;
+			productReference = 38FAAEAA2A63283300514DD6 /* ExamplePDF12.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,6 +194,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					38FAAE8D2A62216D00514DD6 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					38FAAEA92A63283300514DD6 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -131,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				38FAAE8D2A62216D00514DD6 /* ExamplePDF */,
+				38FAAEA92A63283300514DD6 /* ExamplePDF12 */,
 			);
 		};
 /* End PBXProject section */
@@ -145,6 +233,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		38FAAEA82A63283300514DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FAAEB42A63283500514DD6 /* Preview Assets.xcassets in Resources */,
+				38FAAEB12A63283400514DD6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -152,9 +249,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38FAAEBC2A632E4D00514DD6 /* PDFGeneration.swift in Sources */,
 				38FAAE942A62216D00514DD6 /* ContentView.swift in Sources */,
 				38FAAEA12A6221B500514DD6 /* ReleaseInfo.swift in Sources */,
 				38FAAE922A62216D00514DD6 /* ExamplePDFApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38FAAEA62A63283300514DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FAAEBD2A63302400514DD6 /* PDFGeneration.swift in Sources */,
+				38FAAEB92A63285C00514DD6 /* ReleaseInfo.swift in Sources */,
+				38FAAEAF2A63283300514DD6 /* ContentView.swift in Sources */,
+				38FAAEAD2A63283300514DD6 /* ExamplePDF12App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +439,62 @@
 			};
 			name = Release;
 		};
+		38FAAEB62A63283500514DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExamplePDF12/ExamplePDF12.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ExamplePDF12/Preview Content\"";
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.ExamplePDF12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		38FAAEB72A63283500514DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExamplePDF12/ExamplePDF12.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ExamplePDF12/Preview Content\"";
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.ExamplePDF12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +516,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		38FAAEB82A63283500514DD6 /* Build configuration list for PBXNativeTarget "ExamplePDF12" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38FAAEB62A63283500514DD6 /* Debug */,
+				38FAAEB72A63283500514DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -366,6 +540,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		38FAAEA32A62464500514DD6 /* TPPDF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38FAAEA22A62464500514DD6 /* XCRemoteSwiftPackageReference "TPPDF" */;
+			productName = TPPDF;
+		};
+		38FAAEC02A6348F300514DD6 /* TPPDF */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 38FAAEA22A62464500514DD6 /* XCRemoteSwiftPackageReference "TPPDF" */;
 			productName = TPPDF;
