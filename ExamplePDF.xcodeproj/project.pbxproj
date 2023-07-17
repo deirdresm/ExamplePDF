@@ -40,6 +40,7 @@
 		38FAAEB52A63283500514DD6 /* ExamplePDF12.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExamplePDF12.entitlements; sourceTree = "<group>"; };
 		38FAAEBA2A63289600514DD6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		38FAAEBB2A632E4D00514DD6 /* PDFGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFGeneration.swift; sourceTree = "<group>"; };
+		38FAAEC22A65062400514DD6 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				38FAAEA52A62467700514DD6 /* README.md */,
+				38FAAEC22A65062400514DD6 /* LICENSE */,
 				38FAAEBE2A63303200514DD6 /* Shared */,
 				38FAAE902A62216D00514DD6 /* ExamplePDF */,
 				38FAAEAB2A63283300514DD6 /* ExamplePDF12 */,
